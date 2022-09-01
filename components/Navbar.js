@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import NavLinks from "./Navlinks";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,14 +36,15 @@ const Navbar = () => {
             <Link href="/about">About</Link>
           </li>
           <li className="p-4">
-            <Link href="/">Level</Link>
+            <Link href="#gallery">Gallery</Link>
           </li>
           <li className="p-4">
             <Link href="/cart">Cart</Link>
           </li>
-          <li className="p-4">
+          {/* <li className="p-4">
             <Link href="/contact">Contact</Link>
-          </li>
+          </li> */}
+          <NavLinks />
         </ul>
         {/* MOBILE VIEW */}
         {/* Mobile Button */}
