@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const Layout = ({ title, heading, message }) => {
   return (
@@ -14,7 +15,9 @@ const Layout = ({ title, heading, message }) => {
         <div className="p-5 text-white z-[2] mt-[-10rem]">
           <h2 className="text-5xl font-bold">{heading}</h2>
           <p className="py-5 text-xl">{message}</p>
-          <button className="px-8 py-2 border">Book</button>
+          <Link href="/shout">
+            <button className="px-8 py-2 border">Book</button>
+          </Link>
         </div>
       </div>
     </>

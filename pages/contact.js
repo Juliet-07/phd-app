@@ -1,9 +1,15 @@
 import React from "react";
+import Contact from "../components/Contact";
+import Layout from "../components/Layout";
 
 const ContactScreen = () => {
   return (
     <div>
-      <h1>ContactScreen</h1>
+      <Layout
+        heading="Contact"
+        message="Submit the form below for more work and quotes."
+      />
+      <Contact />
     </div>
   );
 };

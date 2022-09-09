@@ -39,12 +39,12 @@ const Navbar = () => {
             <Link href="#gallery">Gallery</Link>
           </li>
           <li className="p-4">
-            <Link href="/cart">Cart</Link>
+            <Link href="/work">Work</Link>
           </li>
-          {/* <li className="p-4">
+          <li className="p-4">
             <Link href="/contact">Contact</Link>
-          </li> */}
-          <NavLinks />
+          </li>
+          {/* <NavLinks /> */}
         </ul>
         {/* MOBILE VIEW */}
         {/* Mobile Button */}
@@ -64,16 +64,28 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li className="p-4 text-3xl hover:font-bold hover:text-gray-500">
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:font-bold hover:text-gray-500"
+            >
               <Link href="/about">About</Link>
             </li>
-            <li className="p-4 text-3xl hover:font-bold hover:text-gray-500">
-              <Link href="/">Level</Link>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:font-bold hover:text-gray-500"
+            >
+              <Link href="/">Gallery</Link>
             </li>
-            <li className="p-4 text-3xl hover:font-bold hover:text-gray-500">
-              <Link href="/cart">Cart</Link>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:font-bold hover:text-gray-500"
+            >
+              <Link href="/work">Work</Link>
             </li>
-            <li className="p-4 text-3xl hover:font-bold hover:text-gray-500">
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:font-bold hover:text-gray-500"
+            >
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
